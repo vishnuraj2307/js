@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+            function doclick(){
+
+	
+       let name=document.getElementById("name").value
+       let patid=document.getElementById("patid").value
+       let ipid=document.getElementById("ipid").value
+       let patroomno=document.getElementById("patroomno").value
+       let patdis=document.getElementById("patdis").value
+	document.write("PATIENT DETAILS <br>")
+document.write("NAME: "+name+"<br>");
+document.write("PATIENT ID: "+patid+"<br>");
+document.write("IN PATIENT ID: "+ipid+"<br>");
+document.write("PATIENT ROOM NO: "+patroomno+"<br>");
+document.write("PATIENT DISEASE: "+patdis+"<br>");
+    }
+	
+          function resest(){
+document.getElementById("reset").resest();
+       }
+</script>
+</head>
+<body>
+
+<form id="marks">
+<label>Patient name:<br>
+<input type="text" id="name"><br><br>
+</label>
+<label>Patient ID <br>
+<input type="text" id="patid"><br><br>
+</label>
+<label>IP id:<br>
+<input type="text" id="ipid"><br><br>
+</label>
+<label>Patient room No:<br>
+<input type="text" id="patroomno"><br><br>
+</label>
+<label>Patient Disease:<br>
+<input type="text" id="patdis"><br><br>
+</label><br>
+
+<input type="button" name="submit" value="Submit" onclick="doclick()">
+<input type="reset"  id="reset" onclick="reset()" value="resest">
+</form>
+<p id="r"></p>
+</body>
+</html>

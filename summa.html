@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		JavaScript to check leap year
+	</title>
+</head>
+
+<body>
+    <h1>Date of Birth</h1>
+        
+	<input type="date" id = "year"/><br><br>
+	
+	<input type="button" id="button" onClick="isLeapYear()" value="Check Leap Year">
+	
+	
+	
+	
+	<script>
+		function isLeapYear() {
+			var year;
+		year = document.getElementById("year").value;
+                var d = new Date( year );
+
+if ( !!d.valueOf() ) {
+    yearr = d.getFullYear();
+    month = d.getMonth()+1;
+    day = d.getDate();
+  }
+		if( (0 == yearr % 4) && (0 != yearr % 100) || (0 == yearr % 400) )
+		{
+			alert(yearr+" !!!! Leap Year !!!!  :)");  
+		}
+		else
+		{
+			alert(yearr+" !!!! Not Leap Year !!!!  :)");  
+		}
+		}
+	</script>
+</body>
+
+</html>					

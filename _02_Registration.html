@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script>
+        function myFunction() {
+           var email=document.getElementById("email").value;
+           var dob=document.getElementById("birthday").value;
+           var gender=document.getElementById("gender").value;
+           var phonenumber=document.getElementById("phonenumber").value;
+           var country=document.getElementById("country").value;
+           var aadhar=document.getElementById("aadharnumber").value;
+
+document.write("REGISTRATION Complete<br>");
+	document.write("Email:"+email+"<br>");
+
+	document.write("DateofBirth:"+dob+"<br>");
+	document.write("Country:"+country+"<br>");
+	document.write("Gender:"+gender+"<br>");
+document.write("Aadharno:"+aadhar+"<br>");
+}
+       function resest(){
+document.getElementById("reset").resest();
+       }
+</script>
+<body>
+<form id="form"><br>
+<label for="Email id">Email id:</label><br>
+<input type="email" id="email" name="email"><br>
+<label for="password">Passowrd:</label><br>
+<input type="password" id="password" name="password"><br>
+<label for="birthday">Birthday:</label><br>
+<input type="date" id="birthday" name="birthday"><br>
+<label for="gender">Gender:</label><br>
+<input type="text" id="gender" name="gender"><br>
+<label for="phonenumber">Phone number:</label><br>
+<input type="number" id="phonenumber" name="phonenumber"><br>
+<label for="country">Country:</label><br>
+<input type="text" id="country" name="country"><br>
+<label for="Aadhar number">Aadhar number:</label><br>
+<input type="number" id="aadharnumber" name="aadhar number"><br>
+<input type="submit"  id="submit" onclick="myFunction()" value="Submit form">
+<input type="reset"  id="reset" onclick="reset()" value="Reset">
+</form>
+</body>
+</html>

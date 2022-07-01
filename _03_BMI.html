@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CALCULATING BMI</title>
+</head>
+<body>
+<div class="c">
+<label>
+	Enter Weight:<input type="number" name="weight" id="we"></label><br><br>
+	<label>
+	Enter Height:<input type="number" name="height" id="he" ></label><br><br>
+	<input type="button" name="submit" value="Submit" onclick="doclick()">
+	<p id="r"></p>
+</div>
+<script>
+	function doclick(){
+	   let w=document.getElementById("we").value;
+	   let h=document.getElementById("he").value;
+
+	   let res= Math.floor(w/(h*h))
+	document.getElementById("r").innerHTML="BMI VALUE: "+res;
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+            function doclick(){
+	   let t=Number(document.getElementById("w").value);
+	   let e=Number(document.getElementById("h").value);
+	   let m=Number(document.getElementById("m").value);
+	   let s=Number(document.getElementById("s").value);
+	   let ss=Number(document.getElementById("ss").value);
+	
+       let name=document.getElementById("name").value
+	   const res= ((t+e+m+s+ss)/5);
+document.write("Hi "+name+"<br>");
+	document.write("Your Average score is :"+res+"<br>");}
+          function resest(){
+document.getElementById("reset").resest();
+       }
+</script>
+</head>
+<body>
+
+<form id="marks">
+<label>Name:<br>
+<input type="text" id="name"><br><br>
+</label>
+<label>DOB:<br>
+<input type="date" id="dob"><br><br>
+</label>
+<label>Age:<br>
+<input type="number" id="age"><br><br>
+</label>
+<label>Gender:<br>
+<input type="text" id="gender"><br><br>
+</label>
+<label>Nationality:<br>
+<input type="text" id="nation"><br><br>
+</label><br>
+<label>
+            Tamil mark:<br><br><input type="number" name="tamil" id="w"></label>
+<label><br><br>
+         English mark:<br><br><input type="number" name="english" id="h" >
+</label><br><br>
+<label>
+maths mark:<br><br><input type="number" name="maths" id="m" >
+</label><br><br>
+<label>
+         Science mark:<br><br><input type="number" name="science" id="s" >
+</label><br><br>
+<label>
+        Social science mark:<br><br><input type="number" name="ss" id="ss" >
+</label><br><br>
+<input type="button" name="submit" value="Submit" onclick="doclick()">
+<input type="reset"  id="reset" onclick="reset()" value="resest">
+</form>
+<p id="r"></p>
+</body>
+</html>

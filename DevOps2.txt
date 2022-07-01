@@ -1,0 +1,34 @@
+PS C:\Users\Packiyaraj\Desktop> git --version
+PS C:\Users\Packiyaraj\Desktop> git init
+Initialized empty Git repository in C:/Users/Packiyaraj/Desktop/.git/
+PS C:\Users\Packiyaraj\Desktop> cd..
+PS C:\Users\Packiyaraj> git init
+Reinitialized existing Git repository in C:/Users/Packiyaraj/.git/
+PS C:\Users\Packiyaraj> cd Documents
+PS C:\Users\Packiyaraj\Documents> cd DevOps
+PS C:\Users\Packiyaraj\Documents\DevOps> git init
+Initialized empty Git repository in C:/Users/Packiyaraj/Documents/DevOps/.git/
+PS C:\Users\Packiyaraj\Documents\DevOps> git status
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.txt
+        v1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Packiyaraj\Documents\DevOps> git add index.txt
+PS C:\Users\Packiyaraj\Documents\DevOps> git add v1.txt
+On branch master
+
+No commits yet
+
+        new file:   v1.txt
+
+PS C:\Users\Packiyaraj\Documents\DevOps> git commit -m "hello"
+[master (root-commit) 9bb81eb] hello
+ 2 files changed, 18 insertions(+)
+ create mode 100644 index.txt
+ create mode 100644 v1.txt
+PS C:\Users\Packiyaraj\Documents\DevOps> git remote add origin https://github.com/vishnuraj2307/vishnuraj.git
+PS C:\Users\Packiyaraj\Documents\DevOps> git branch -M main
+PS C:\Users\Packiyaraj\Documents\DevOps> git remote add origin https://github.com/vishnuraj2307/vishnuraj.git
